@@ -1,0 +1,5 @@
+docker build -t flask-mdb-api .
+docker run -p 9000:5000 -v /Users/pitiphanthasombath/Desktop/Me/car-check-project/SuperABS/System/SuperABS_DB.mdb:/app/data.mdb flask-mdb-api
+
+docker run --net=host -it -e NGROK_AUTHTOKEN=2L1xxYSZcmdazV4Nb2Pj2opwUcy_5gBUHnEnKfWg3u6c1Rwiw ngrok/ngrok:latest http --domain=walrus-vital-adversely.ngrok-free.app 9000
+
